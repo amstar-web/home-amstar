@@ -1333,7 +1333,7 @@ text-align: right;
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: 10px;
-  border-width: 3px;
+  border-width: 2px;
   width: 26px;
   height: 26px;
   position: absolute;
@@ -2158,6 +2158,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   margin-top: 0;
   padding-top: 10px;
   text-align: center;
+  padding-bottom: 10px;
 }
 .dialog__separator {
   display: inline-block;
@@ -2169,6 +2170,91 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 .travel-agent-dialog {
   background: 0 100% no-repeat url(../img/travel-agent-dialog-bg.png);
   padding-bottom: 61px;
+}
+.flag-en{
+  background: 0 100% no-repeat url(../img/united-states.svg);
+  padding-bottom: 30px;
+  background-position: center;
+}
+.flag-es{
+  background: 0 100% no-repeat url(../img/mexico.svg);
+  padding-bottom: 30px;
+  background-position: center;
+}
+.flag-item {
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+}
+.item-product{
+  color: #004b8d;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.btn-cart-view{
+  border: 1px solid #fd8300;
+  background: transparent;
+  font-size: 12px;
+  color: #fd8300;
+  padding: 5px;
+  text-transform: uppercase;
+}
+.btn-cart-check{
+  font-size: 12px;
+  padding: 5px;
+  float: right;
+}
+.line-cart{
+  border-top: 1px solid #004b8d;
+  margin: 10px 0;
+}
+.cart-dialog-details{
+  line-height: 17px;
+}
+.cart-dialog-total, .cart-dialog-price{
+  color: #004b8d;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+.cart-dialog-image{
+  background:0 100% no-repeat url(../img/home-destination-02.jpg);
+  padding-bottom: 78%;
+  background-size: contain;
+}
+.cart-dialoge-cancel {
+    font-size: 10px;
+    float: right;
+    color: #004b8d;
+}
+.cart-dialog-tour {
+    font-size: 11px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.cart-dialoge-cancel {
+    font-size: 9px;
+    float: right;
+    color: #004b8d;
+    margin-top: 4px;
+}
+.cart-dialog-price{
+  text-align: right;
+}
+.cart-dialog-qty {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.cart-dialog-tour-price {
+    color: #004b8d;
+    font-size: 11px;
+}
+.cart-dialog-info{
+  margin-top: 10px;
+}
+.ui-widget-content{
+  min-height: 120px;
 }
 .page-header.home-page{
   width: 100%;
