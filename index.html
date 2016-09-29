@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="./img/favicon.png">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
@@ -129,7 +130,20 @@
         <li class="top-nav__item"><a href="./about_us.html" class="top-nav__item-title">About</a></li>
         <!--<li class="top-nav__item"><a href="./contact_us.html" class="top-nav__item-title">Contact Us</a></li>-->
       </ul>
+
     </nav>
+         <!-- <div class="ta-button"><a href="">hola</a></div> ---->
+          <div class="ta-button">
+    <div class="button-background"></div>
+<div class="icon-user"></div>
+    <div class="label">
+      <span>Travel Agent</span>
+  
+    </div>
+  </div>
+
+
+
     </header>
     
     <div class="top-content">
@@ -139,17 +153,34 @@
         </div>
 
         <div class="swiper-wrapper">
-          <div style="background-image: url(./img/swiper/banner-home.jpg);" class="swiper-slide top-swiper-slide">
-            <!--<div class="promotion-block-wrapper">
+          <div style="" class="swiper-slide top-swiper-slide blur">
+              <div class="hero_area">
+    <video id="sensi-video" loop="loop" preload="auto" class="video-playing" autoplay="autoplay">
+      <source type="video/webm" src="img/588754553.webm"></source>
+      <source type="video/mp4" src="img/588754553.mp4"></source>
+          <img src="img/588754553.jpg">
+    </video>
+           <div class="caption">
+              <h1 class="animated fadeInLeftBig">Exceptional Travel Experiences</h1> <!-- AHC:Sólo debe existir un H1 por página -->
+              <h2 class="animated fadeInRightBig">Book now your tranfers, excursion & car rental</h2>
+            </div>
+  </div>
+          <!--- <div class="promotion-block-wrapper">
               <div class="promotion-block">
                 <div class="promotion-block__text"><span style="font-size: 23px; font-style: italic;">Riviera Maya</span><br><span style="font-size: 30px;">Chichen Plus </span><br><span style="font-size: 20px;">from $<span style="font-size: 40px; vertical-align: text-top; line-height: 1;">59</span> USD</span></div>
                 <div class="promotion-block__action"><a href="./offers-and-discounts.html" class="btn btn-notice">Book Now</a></div>
               </div>
             </div>-->
+       
+
             <div class="home-border-container"><div class="icon-top"></div></div>
+
           </div>
+
         </div>
       </div>
+
+
       <div class="searchbox-section">
       <!--<div class="swiper-cont">
            <div class="swiper-content">Inspiring travel experiences </div>
@@ -159,10 +190,12 @@
           <ul class="searchbox-tabs-nav">
             <li class="searchbox-tabs-nav__item ui-tabs-active"><a href="#tabs-transfers" class="searchbox-tabs-nav__item-title">Transfers</a></li>
             <li class="searchbox-tabs-nav__item"><a href="#tabs-tours" class="searchbox-tabs-nav__item-title">Tours</a></li>
+                <li class="searchbox-tabs-nav__item"><a href="#tabs-carrental" class="searchbox-tabs-nav__item-title">Car Rental</a></li>
           </ul>
-          <div class="searchbox-tabs">
+          <div class="searchbox-tabs search-airport-tranfers">
             <div id="tabs-transfers" class="searchbox-tab">
               <form action="./airport_transfers.html">
+               <div class="form-line1">
                 <label class="form-field">Airport
                   <input type="text" placeholder="CUN / Cancun" class="form-control form-control--searchbox">
                 </label>
@@ -173,50 +206,53 @@
                     <option value="3">Option Three</option>
                   </select>
                 </label>
+             
                 <label class="form-field">Hotel
                   <input type="text" placeholder="CUN / Cancun" class="form-control form-control--searchbox">
                 </label>
-                <div class="form-group-flex-all">
-                  <label class="form-field">Adult
+          
+                </div>
+
+              
+                    <div class="form-line1">
+                  
+                  <label class="form-small-select">Adult
                     <select id="sb-adult" name="sb-adult" class="form-control form-control--searchbox jqueryui-selectmenu">
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
                     </select>
                   </label>
-                  <label class="form-field">Child
+                  <label class="form-small-select">Child
                     <select id="sb-child" name="sb-child" class="form-control form-control--searchbox jqueryui-selectmenu">
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
                     </select>
                   </label>
-                  <label class="form-field">Infant
+                  <label class="form-small-select">Infant
                     <select id="sb-infant" name="sb-infant" class="form-control form-control--searchbox jqueryui-selectmenu">
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
                     </select>
                   </label>
-                </div>
-                <div class="form-group-flex-all">
+            
+                
+    
                   <label class="form-field">Arrival
                     <input type="text" class="form-control form-control--searchbox form-control--small datepicker-control js-datepicker">
                   </label>
                   <label class="form-field">Departure
                     <input type="text" class="form-control form-control--searchbox form-control--small datepicker-control js-datepicker">
                   </label>
+                </div></div>
+            
+                     <div class="form-field--center"> 
+                     <div class="btn btn-notice"><span class="icon-search-1 iconbtn"></span>
+                  <a href="#" class="btntextwhite">search</a> </div>
                 </div>
-                <div class="form-field--center">
-                  <input type="submit" value="Search" class="btn btn-notice">
-                </div>
-              </form>
-            </div>
-            <div id="tabs-tours" class="searchbox-tab">
-              <form action="./tours_and_activities.html">Tours search box tab
-                <div class="form-field--center">
-                  <input type="submit" value="Search" class="btn btn-notice">
-                </div>
+
               </form>
             </div>
           </div>
