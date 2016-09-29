@@ -3110,6 +3110,48 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   .top-logom{
     width: 100%;
   }
+
+  .ta-button {
+    position: fixed;
+    top: 33%;
+    right: 0px;
+    background-color: rgba(253, 155, 0, 0.76);
+    width: 175px;
+    height: 55px;
+    color: #ffffff;
+    box-shadow: 0 8px 22px 0 rgba(18,17,30,.15);
+    -webkit-box-shadow: 0 8px 22px 0 rgba(18,17,30,.15);
+-moz-box-shadow: 0 8px 22px 0 rgba(18,17,30,.15);
+}
+
+
+  .ta-button a{
+color: #ffffff;
+text-decoration: none;
+text-align: center;
+line-height: 50px;
+}
+.ta-button .icon-user {
+    float: left;
+    position: relative;
+    height: inherit;
+    width: 50px;
+    font-size: 35px;
+    margin: 10px -1px 0px 7px;
+}
+.ta-button .label {
+      font-size: 14px;
+          text-transform: uppercase;
+    position: relative;
+    top: 50%;
+    color: #fff;
+    font-weight: 400;
+    overflow: hidden;
+    line-height: 1.5;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
   .home-page .menu-icon, .home-page .user-action,  .home-page .top-contacts__item,   
   .home-page .top-nav--first-level > li.current > .top-nav__item-title{
     color: #fff;
@@ -3805,6 +3847,71 @@ button.swiper-pagination-bullet {
 .swiper-scrollbar-cursor-drag {
   cursor: move;
 }
+
+.caption {
+    position: absolute;
+    top: 48%;
+    margin-top: -104px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    /* text-transform: uppercase; */
+    z-index: 15;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+}
+.caption h2 {
+    color: #fff;
+    font-size: 35px;
+    margin-bottom: 20px;
+    border-bottom: none;
+}
+.caption h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-bottom: none;
+    text-transform: uppercase;
+}
+
+.hero_area{
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+audio, canvas, video{
+  display: inline-block;
+}
+
+.fade-video {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.3);
+}
+
+/* here bottom value can be set to 0 to always match the buttom part of the video with the buttom part of the containing div, in our case hero_area. I have used negative -150px to pull the video downward so that i can chop some unwanted area which overflow of parent(hero_area) will hide.
+* as width is set to 100%, and height to auto, as the width of the browser changes height is auto calculated making the video responsive
+*/
+
+.blur {
+-webkit-filter: grayscale(20%)
+filter: grayscale(20%);
+}
+.hero_area video{
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
 /* Preloader */
 .swiper-lazy-preloader {
   width: 42px;
@@ -4075,7 +4182,8 @@ button.swiper-pagination-bullet {
     font-weight: bold;
     text-transform: uppercase;
     line-height: 14px;
-}
+}                                         
+
 .resultstext {
     font-size: 16px;
     color: #004b8d;
@@ -5165,6 +5273,7 @@ button.swiper-pagination-bullet {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  border-right: solid 1px rgba(0, 0, 0, 0.34);
 }
 .searchbox-tabs-nav__item-title:hover {
   color: #fff;
@@ -5173,7 +5282,7 @@ button.swiper-pagination-bullet {
   background-color: rgba(253, 131, 0, 0.7);
 }
 .searchbox-tabs {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4) !important;
   padding: 10px 25px 15px;
 }
 .searchbox-tab:not(:first-child) {
@@ -5228,12 +5337,12 @@ button.swiper-pagination-bullet {
 @media (min-width: 768px) {
   .searchbox {
     position: absolute;
-    bottom: 100px;
+    bottom: 51px;
     width: 100%
-    /*left: 135px;*/
+    /*left: 135px;*/;
   }
   .searchbox-tabs-nav {
-    width: 110px;
+    /* width: 110px; */
     /*position: absolute;
     display: block;*/
     top: 0;
@@ -7375,5 +7484,141 @@ display: inline-block;
     padding-right: 0;
   }
 }
-
+.ta-landing-imgback{
+  background-image: url(../img/home-travelagents-back.jpg);
+}
+.form-control--ta{
+  margin-bottom: 5px;
+  border: none ;
+}           
+.ta-landing-form .ui-selectmenu-button{
+  border: none;
+  margin-bottom: 5px;
+  background: rgba(255,255,255,0.85);
+}
+.ta-form-left{
+  padding-right: 40px;
+  border-right: 2px solid #fff;
+  width: 70%;
+  float: right;
+}
+.ta-form-right{
+  padding-left: 20px;
+  width: 70%;
+}
+.form-field-lg{
+  display: inline-block;
+  width: 60%;
+  vertical-align: top;
+}
+.form-field-sm{
+  display: inline-block;
+  width: 38%;
+  vertical-align: top;
+  margin-right: 5px;
+}
+.form-field-state{
+  display: inline-block;
+  width: 60%;
+  margin-right: 5px;
+  vertical-align: top;
+}
+.form-field-zip{
+  display: inline-block;
+  width: 38%;
+  vertical-align: top;
+}
+.ta-landing-form input{
+  background: rgba(255,255,255,0.85);
+  height: 35px;
+}
+.ta-landing-form .ui-selectmenu-button span.ui-selectmenu-text{
+  height: 35px;
+  color: #000;
+}
+.ta-item-footer{
+  text-align: center;
+  margin-top: 40px;
+  position: relative;
+}
+.ta-text-footer{
+  font-size: 11px;
+  color: #000;
+  position: absolute;
+  left: 161px;
+}
+.ta-page-title{
+  font-size: 35px;
+  text-align: center;
+  margin: 0 0 40px;
+}
+.ta-landing-background{
+  height: 100%;
+  color: #fff;
+  padding: 6% 0;
+  position: relative;
+}
+.ta-image-profile{
+  margin-top: 20px;
+}
+.ta-form-right .btn-large{
+  font-size: 20px;
+  min-width: 140px;
+}
+.ta-files-text{
+  color: #000;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.ta-form-title{
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.ta-profile-pic{
+  background:url(../img/profile-pic.png) no-repeat center;
+  padding-bottom: 70px;
+  background-size: contain;
+}
+@media (max-width: 769px){
+  .ta-form-right .btn-large{
+    font-size: 15px;
+    padding: 10px;
+    min-width: 113px;
+  }
+  .form-field-state{
+    width: 59%;
+  }
+  .form-field-sm{
+    width: 37%;
+  }
+}
+@media (max-width: 376px){
+  .ta-form-left {
+    padding: 20px;
+    border-right: none;
+    width: 100%;
+  }
+  .ta-form-right {
+    padding: 20px;
+    width: 100%;
+  }
+  .ta-text-footer{
+    position: initial;
+    margin-bottom: 10px;
+  }
+  .ta-item-footer{
+    margin-top: 0;
+  }
+  .ta-image-profile{
+    text-align: center;
+  }
+  .form-field-state {
+    width: 60%;
+  }
+  .form-field-sm {
+    width: 38%;
+  }
+}
 /*# sourceMappingURL=../maps/main.css.map */
